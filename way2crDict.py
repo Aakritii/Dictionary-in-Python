@@ -33,9 +33,49 @@ myDict2={}
 for val in lst: 
     for ele in range(int(val), int(val) + 2):  
         myDict2.setdefault(ele, []).append(val) 
-        
 print(myDict2)
 
+
+#----------------Collaborated by Muskan Salampuria-----------#
+        
+# Creating a dictionary of lists using list comprehension 
+myDict3 = dict((val, range(int(val), int(val) + 2)) 
+                  for val in ['1', '2', '3']) 
+  
+print(myDict3) 
+     
+  
+# Importing defaultdict 
+from collections import defaultdict 
+  
+dict1 = [('Happy', 1), ('Birthday', 2), ('Muskan', 3)] 
+myDict4 = defaultdict(list) 
+  
+# iterating over list of tuples 
+for key, val in dict1: 
+    myDict4[key].append(val) 
+  
+print(myDict4) 
+
+
+#importing json 
+import json 
+  
+#Initialisation of list 
+dict2 = [('Happy', 1), ('Birthday', 2), ('Muskan', 3)] 
+  
+#Initialisation of dictionary 
+myDict5 = {} 
+  
+#using json.dump() 
+hash = json.dumps(dict2) 
+  
+#creating a hash 
+myDict5[hash] = "converted"
+  
+#Printing dictionary 
+print(myDict5) 
+=======
 # Importing defaultdict 
 from collections import defaultdict 
   
@@ -47,4 +87,3 @@ for key, val in lst:
     orDict[key].append(val) 
   
 print(orDict)
-

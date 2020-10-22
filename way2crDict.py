@@ -1,9 +1,5 @@
 
 # coding: utf-8
-
-# In[ ]:
-
-
 # Creating an empty dictionary 
 myDict = {} 
 
